@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:src="@drawable/music1"
+                />
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:src="@drawable/music2"
+
+                />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/music3"
+                />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/downloadingLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter you downloading link please"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100px"/>
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="download"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"/>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px">
+
+        <ImageView
+            android:id="@+id/playImage"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/pauseImage"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/stopImage"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@drawable/stop" />
+    </LinearLayout>
+</LinearLayout>
